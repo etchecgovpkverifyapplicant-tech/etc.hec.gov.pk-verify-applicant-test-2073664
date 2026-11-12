@@ -1,463 +1,433 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>HEC - ETC</title>
-<link rel="icon" type="image/png" href="hec-etc.png">
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #f3f6f7;
-  font-family: Arial, sans-serif;
-  color: #303840;
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1">  <title>HEC - ETC</title>  
+<link rel="icon" type="png" href="hec-etc.png">  
+<style>  
+* {  
+  box-sizing: border-box;  
+}  body {
+margin: 0;
+background: #f3f6f7;
+font-family: Arial, sans-serif;
+color: #303840;
 }
 
 /* =========================
-   HEC HEADER
+HEC HEADER
 ========================= */
 
 header {
-  width: 100%;
-  height: 74px;
-  padding: 5px 22px;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  background: linear-gradient(105deg, #007b3d, #08769c);
-  color: white;
+width: 100%;
+height: 74px;
+padding: 5px 22px;
+display: flex;
+align-items: center;
+gap: 60px;
+background: linear-gradient(105deg, #007b3d, #08769c);
+color: white;
 }
 
 header img {
-  width: 95px;
-  height: 110px;
-  object-fit: contain;
-  flex-shrink: 0;
+width: 95px;
+height: 110px;
+object-fit: contain;
+flex-shrink: 0;
 }
 
 .header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .brand {
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
+font-family: Arial, sans-serif;
+font-size: 24px;
+font-weight: ;
+line-height: 1.2;
+margin: 0;
 }
 
 .newlook {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.2;
-  margin-top: 3px;
+font-family: Arial, sans-serif;
+font-size: 13px;
+font-weight: normal;
+line-height: 1.2;
+margin-top: 3px;
 }
 
 /* =========================
-   MAIN CONTENT
+MAIN CONTENT
 ========================= */
 
 main {
-  width: 94%;
-  margin: 63px auto 35px;
+width: 94%;
+margin: 63px auto 35px;
 }
 
 /* APPLICANT HEADING */
 
 .heading-area {
-  background: #ffffff;
-  padding: 25px 18px 21px;
-  border-bottom: 1px solid #e0e0e0;
+background: #ffffff;
+padding: 25px 18px 21px;
+border-bottom: 1px solid #e0e0e0;
 }
 
 h2 {
-  font-family: Arial, sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  margin: 0;
-  color: #303840;
+font-family: Arial, sans-serif;
+font-size: 22px;
+font-weight: bold;
+margin: 0;
+color: #303840;
 }
 
 /* =========================
-   APPLICANT CARD
+APPLICANT CARD
 ========================= */
 
 .card {
-  width: 100%;
-  background: #ffffff;
-  border: 1px solid #dedede;
-  border-radius: 4px;
-  overflow: hidden;
+width: 100%;
+background: #ffffff;
+border: 1px solid #dedede;
+border-radius: 4px;
+overflow: hidden;
 }
 
 /* PHOTOGRAPH SECTION */
 
 .photo-area {
-  height: 248px;
-  padding: 55px 28px;
-  display: flex;
-  align-items: flex-start;
+height: 248px;
+padding: 55px 28px;
+display: flex;
+align-items: flex-start;
 }
 
 .photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 2px solid #a7cece;
-  border-radius: 2px;
+width: 150px;
+height: 150px;
+object-fit: cover;
+border: 2px solid #a7cece;
+border-radius: 2px;
 }
 
 /* =========================
-   DETAILS SECTION
+DETAILS SECTION
 ========================= */
 
 .details {
-  width: 100%;
-  min-height: 179px;
-  background: #ffffff;
-  border-top: 1px solid #dedede;
-  padding: 30px 28px 48px;
+width: 100%;
+min-height: 179px;
+background: #ffffff;
+border-top: 1px solid #dedede;
 
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+padding: 30px 28px 48px;
 
-  column-gap: 25px;
-  row-gap: 30px;
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+
+column-gap: 25px;
+row-gap: 30px;
 }
 
 .field {
-  min-width: 0;
+min-width: 0;
 }
 
 /* DETAILS LABELS */
 
 .field small {
-  display: block;
-  font-family: Arial, sans-serif;
-  font-size: 10px;
-  color: #829eae;
-  font-weight: bold;
-  letter-spacing: 0.3px;
-  margin-bottom: 6px;
-  line-height: 1.2;
+display: block;
+font-family: Arial, sans-serif;
+font-size: 10px;
+color: #829eae;
+font-weight: bold;
+letter-spacing: 0.3px;
+margin-bottom: 6px;
+line-height: 1.2;
 }
 
 /* DETAILS VALUES */
 
 .field div {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  color: #777f86;
-  line-height: 1.5;
-  overflow-wrap: anywhere;
+font-family: Arial, sans-serif;
+font-size: 13px;
+font-weight: normal;
+color: #777f86;
+line-height: 1.5;
+overflow-wrap: anywhere;
 }
 
 /* =========================
-   HELPLINE ICON
+HELPLINE ICON
 ========================= */
 
 .helpline {
-  position: fixed;
-  left: 20px;
-  bottom: 18px;
-  width: 47px;
-  height: 47px;
-  border: 2px solid #1689c8;
-  border-radius: 50%;
-  background: #dcebf6;
-  display: grid;
-  place-items: center;
-  z-index: 1000;
+position: fixed;
+left: 20px;
+bottom: 18px;
+width: 47px;
+height: 47px;
+border: 2px solid #1689c8;
+border-radius: 50%;
+background: #dcebf6;
+display: grid;
+place-items: center;
+z-index: 1000;
 }
 
 .helpline svg {
-  width: 38px;
-  height: 38px;
+width: 38px;
+height: 38px;
 }
 
 /* =========================
-   TABLET RESPONSIVE
+TABLET RESPONSIVE
 ========================= */
 
-@media (max-width: 750px) {
+@media(max-width: 750px) {
 
-  header {
-    height: auto;
-    min-height: 74px;
-    padding: 8px 14px;
-    gap: 20px;
-  }
+header {
+height: auto;
+min-height: 74px;
+padding: 8px 14px;
+gap: 20px;
+}
 
-  header img {
-    width: 42px;
-    height: 50px;
-  }
+header img {
+width: 42px;
+height: 50px;
+}
 
-  .brand {
-    font-size: 17px;
-    white-space: normal;
-  }
+.brand {
+font-size: 17px;
+white-space: normal;
+}
 
-  .newlook {
-    font-size: 11px;
-    line-height: 1.3;
-  }
+.newlook {
+font-size: 11px;
+line-height: 1.3;
+}
 
-  main {
-    width: calc(100% - 30px);
-    margin: 35px auto;
-  }
+main {
+width: 94%;
+margin: 35px auto;
+}
 
-  .heading-area {
-    padding: 20px 15px;
-  }
+.heading-area {
+padding: 20px 15px;
+}
 
-  h2 {
-    font-size: 20px;
-  }
+h2 {
+font-size: 20px;
+}
 
-  .photo-area {
-    height: 200px;
-    padding: 25px 18px;
-  }
+.photo-area {
+height: 190px;
+padding: 25px 18px;
+}
 
-  .photo {
-    width: 145px;
-    height: 145px;
-  }
+.photo {
+width: 135px;
+height: 135px;
+}
 
-  .details {
-    grid-template-columns: 1fr;
-    padding: 25px 18px 35px;
-    gap: 25px;
-  }
+.details {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+padding: 25px 18px 35px;
+gap: 25px 18px;
+}
 
-  .field div {
-    font-size: 13px;
-  }
+.field div {
+font-size: 13px;
+}
 }
 
 /* =========================
-   SMALL MOBILE
+SMALL MOBILE
 ========================= */
 
-@media (max-width: 390px) {
+@media(max-width: 390px) {
 
-  header {
-    gap: 12px;
-  }
+header {
+gap: 12px;
+}
 
-  header img {
-    width: 36px;
-    height: 45px;
-  }
+header img {
+width: 36px;
+height: 45px;
+}
 
-  .brand {
-    font-size: 15px;
-  }
+.brand {
+font-size: 15px;
+}
 
-  .newlook {
-    font-size: 10px;
-  }
+.newlook {
+font-size: 10px;
+}
 
-  .photo {
-    width: 130px;
-    height: 130px;
-  }
+.details {
+grid-template-columns: 1fr;
+}
 
-  .details {
-    grid-template-columns: 1fr;
-  }
+.photo {
+width: 120px;
+height: 120px;
+}
 }
 
 /* =========================
-   PRINT
+PRINT
 ========================= */
 
 @media print {
-  .helpline {
-    display: none;
-  }
+.helpline {
+display: none;
+}
 }
 
-</style>
-</head>
+</style>  
+</head>  <body>  <!-- =========================  
+     HEC HEADER  
+========================= -->  <header>  <img
+src="hec_logo_white_4k.png"
+alt="HEC Logo"
 
-<body>
+> 
 
-<!-- HEC HEADER -->
+  <div class="header-content">  <div class="brand">  
+  Higher Education Commission, Pakistan  
+</div>  
 
-<header>
+<div class="newlook">  
+  Facilitating Institutes of Higher Learning to serve as an Engine of Growth for the Socio-Economic Development of Pakistan  
+</div>
 
-  <img
-    src="hec_logo_white_4k.png"
-    alt="HEC Logo"
-  >
+  </div>  </header>  <!-- =========================  
+     APPLICANT DETAILS  
+========================= -->  <main>    <div class="heading-area">  
+    <h2>Applicant Details</h2>  
+  </div>    <section class="card">  <!-- APPLICANT PHOTOGRAPH -->  
 
-  <div class="header-content">
+<div class="photo-area">  
 
-    <div class="brand">
-      Higher Education Commission, Pakistan
-    </div>
+  <img  
+    class="photo"  
+    src="WhatsApp Image 2026-11-10 at 04.45.10.jpeg"  
+    alt="Applicant photograph"  
+  >  
 
-    <div class="newlook">
-      Facilitating Institutes of Higher Learning to serve as an Engine of Growth for the Socio-Economic Development of Pakistan
-    </div>
+</div>  
 
-  </div>
 
-</header>
+<!-- APPLICANT INFORMATION -->  
 
-<!-- APPLICANT DETAILS -->
+<div class="details">  
 
-<main>
+  <div class="field">  
+    <small>FULL NAME</small>  
+    <div>Khalid Ahmed</div>  
+  </div>  
 
-  <div class="heading-area">
-    <h2>Applicant Details</h2>
-  </div>
+  <div class="field">  
+    <small>CNIC</small>  
+    <div>4510532360373</div>  
+  </div>  
 
-  <section class="card">
+  <div class="field">  
+    <small>ROLL NUMBER</small>  
+    <div>192079</div>  
+  </div>  
 
-    <!-- APPLICANT PHOTOGRAPH -->
+  <div class="field">  
+    <small>TEST NAME</small>  
+    <div>LAW Admission Test</div>  
+  </div>  
 
-    <div class="photo-area">
+  <div class="field">  
+    <small>TEST TIME</small>  
+    <div>1:30 PM</div>  
+  </div>  
 
-      <img
-        class="photo"
-        src="WhatsApp Image 2026-11-10 at 04.45.10.jpeg"
-        alt="Applicant photograph"
-      >
+  <div class="field">  
+    <small>TEST VENUE</small>  
+    <div>  
+      Government Girls Higher Secondary School  
+      Barrage Colony Sukkur  
+    </div>  
+  </div>  
 
-    </div>
+  <div class="field">  
+    <small>TEST DATE</small>  
+    <div>Sunday, November 15, 2026</div>  
+  </div>  
 
-    <!-- APPLICANT INFORMATION -->
+</div>
 
-    <div class="details">
+  </section>  </main>  <!-- =========================  
+     HEC ONLINE HELPDESK  
+========================= -->  <a
+class="helpline"
+href="https://onlinehelp.hec.gov.pk/"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="HEC Online Helpdesk"
 
-      <div class="field">
-        <small>FULL NAME</small>
-        <div>Khalid Ahmed</div>
-      </div>
+> 
 
-      <div class="field">
-        <small>CNIC</small>
-        <div>4510532360373</div>
-      </div>
+<svg viewBox="0 0 64 64" aria-hidden="true">  <path  
+d="M12 57c2-12 10-19 20-19s18 7 20 19"  
+fill="#1676b8"  
+/>
 
-      <div class="field">
-        <small>ROLL NUMBER</small>
-        <div>192079</div>
-      </div>
+<path  
+d="M23 41l9 10 9-10-4-4H27z"  
+fill="#f5f8fa"  
+/>
 
-      <div class="field">
-        <small>TEST NAME</small>
-        <div>LAW Admission Test</div>
-      </div>
+<path  
+d="M29 48l3 3 3-3-1-7h-4z"  
+fill="#174d78"  
+/>
 
-      <div class="field">
-        <small>TEST TIME</small>
-        <div>1:30 PM</div>
-      </div>
+<path  
+d="M26 33h12v10c-3 4-9 4-12 0z"  
+fill="#d99a73"  
+/>
 
-      <div class="field">
-        <small>TEST VENUE</small>
-        <div>
-          Government Girls Higher Secondary School
-          Barrage Colony Sukkur
-        </div>
-      </div>
+<ellipse  
+cx="32" cy="25" rx="13" ry="16"  
+fill="#e8b18c"  
+/>
 
-      <div class="field">
-        <small>TEST DATE</small>
-        <div>Sunday, November 15, 2026</div>
-      </div>
+<path  
+d="M19 25c-2-10 3-19 13-20 9-1 15 6 14 17l-4-5-2-7c-5 5-12 7-20 7z"  
+fill="#3e302c"  
+/>
 
-    </div>
+<path  
+d="M17 27v-5c0-10 6-16 15-16s15 6 15 16v5"  
+fill="none"  
+stroke="#087db5"  
+stroke-width="3"  
+/>
 
-  </section>
+<rect  
+x="14" y="23" width="6" height="11" rx="3"  
+fill="#087db5"  
+/>
 
-</main>
+<rect  
+x="44" y="23" width="6" height="11" rx="3"  
+fill="#087db5"  
+/>
 
-<!-- HEC ONLINE HELPDESK -->
+<path  
+d="M46 34c-1 5-5 7-10 7"  
+fill="none"  
+stroke="#087db5"  
+stroke-width="2.5"  
+/>
 
-<a
-  class="helpline"
-  href="https://onlinehelp.hec.gov.pk/"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="HEC Online Helpdesk"
->
-
-<svg viewBox="0 0 64 64" aria-hidden="true">
-
-  <path
-    d="M12 57c2-12 10-19 20-19s18 7 20 19"
-    fill="#1676b8"
-  />
-
-  <path
-    d="M23 41l9 10 9-10-4-4H27z"
-    fill="#f5f8fa"
-  />
-
-  <path
-    d="M29 48l3 3 3-3-1-7h-4z"
-    fill="#174d78"
-  />
-
-  <path
-    d="M26 33h12v10c-3 4-9 4-12 0z"
-    fill="#d99a73"
-  />
-
-  <ellipse
-    cx="32" cy="25" rx="13" ry="16"
-    fill="#e8b18c"
-  />
-
-  <path
-    d="M19 25c-2-10 3-19 13-20 9-1 15 6 14 17l-4-5-2-7c-5 5-12 7-20 7z"
-    fill="#3e302c"
-  />
-
-  <path
-    d="M17 27v-5c0-10 6-16 15-16s15 6 15 16v5"
-    fill="none"
-    stroke="#087db5"
-    stroke-width="3"
-  />
-
-  <rect
-    x="14" y="23" width="6" height="11" rx="3"
-    fill="#087db5"
-  />
-
-  <rect
-    x="44" y="23" width="6" height="11" rx="3"
-    fill="#087db5"
-  />
-
-  <path
-    d="M46 34c-1 5-5 7-10 7"
-    fill="none"
-    stroke="#087db5"
-    stroke-width="2.5"
-  />
-
-</svg>
-
-</a>
-
-</body>
-</html>
+</svg>  </a>  </body>  
+</html> 
